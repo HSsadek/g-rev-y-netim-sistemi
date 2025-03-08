@@ -18,9 +18,18 @@
 <body>
 
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-12">
-        <img class="d-flex justify-contnt-start m-3 ml-0" style="width: auto; height: 70px;" src="image/Done3.png" alt="">
+    <div class="row align-items-center py-2">
+      <div class="col-3">
+        <img class="mw-100" style="width: 35%;" src="image/Done3.png" alt="">
+      </div>
+      <div class="col-6"></div>
+      <div class="col-3">
+        <div class="row align-items-center m-0">
+          <div class="col-9 fs-5 text-end">Hussein Sadek</div>
+          <div class="col-3">
+            <img class="rounded-circle mw-100" src="image/profil-user.svg" alt="Profile" style="height: 50px; width: 50px;">
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -28,75 +37,90 @@
 
   <div class="container-fluid">
     <div class="row">
-      <div class="col-3">
-        <div class="b-example-divider b-example-vr"></div>
-          <div class="flex-shrink-0 p-3 bg-white" style="width: 280px;">
-            <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
-            <svg class="bi pe-none me-2" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
-            <span class="fs-5 fw-semibold">My Task</span>
-            </a>
-            <ul class="list-unstyled ps-0">
-              <li class="mb-1">
-                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
-                Dashboard
-                </button>
-                <div class="collapse show" id="home-collapse">
-                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Project Dashboard</a></li>
-                  </ul>
+      <div class="col-3 fixed-bottom" >
+        <div class="b-example-divider b-example-vr" ></div>
+          <div class="flex-shrink-0 p-3 rounded-5 m-3" style="height: 88vh; width: 350px; background-color: #ff5757;" >
+              <div class="row d-flex align-items-center text-center pb-5">
+                <div class="col-12">
+                  <div class="my-task" style="font-size: xx-large;">
+                    <div class="no d-flex justify-content-center align-items-center">
+                      <i class="fa-solid fa-clipboard-list fa-2x"></i>
+                    <p style="margin-left: 15px; margin-top: 10px;">My Task</p>
+                    </div>
+                  </div>
                 </div>
-              </li>
-              <li class="mb-1">
-                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
-                  Projects
-                </button>
-                <div class="collapse" id="dashboard-collapse">
-                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Projects</a></li>
-                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Tasks</a></li>
-                  </ul>
-                </div>
-              </li>
-              <li class="mb-1">
-                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse2" aria-expanded="false">
-                  Embloyees
-                </button>
-                <div class="collapse" id="dashboard-collapse2">
-                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">members</a></li>
-                  </ul>
-                </div>
-              </li>
-              <li class="mb-1">
-                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
-                  Pyroll
-                </button>
-                <div class="collapse" id="orders-collapse">
-                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Employee Salary</a></li>
-                  </ul>
-                </div>
-              </li>
-              <li class="border-top my-3"></li>
-              <li class="mb-1">
-                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
-                  Account
-                </button>
-                <div class="collapse" id="account-collapse">
-                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">New...</a></li>
-                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Profile</a></li>
-                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Settings</a></li>
-                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Sign out</a></li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
+              </div>
+            <div class="row mb-3 ">
+              <div class="col-12">
+                <ul class="list-unstyled ps-0">
+                  <li class="mb-3">
+                    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-white fw-bold" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true"  style="font-size: x-large;">
+                      Dashboard
+                    </button>
+                    <div class="collapse show" id="home-collapse">
+                      <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="index.html" class="link-dark d-inline-flex text-decoration-none rounded">Project Dashboard</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="mb-3">
+                    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed  text-white fw-bold" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false"  style="font-size: x-large;">
+                      Projects
+                    </button>
+                    <div class="collapse" id="dashboard-collapse">
+                      <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Projects</a></li>
+                        <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Tasks</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="mb-3">
+                    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed  text-white fw-bold" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse2" aria-expanded="false"  style="font-size: x-large;">
+                      Embloyees
+                    </button>
+                    <div class="collapse" id="dashboard-collapse2">
+                      <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">members</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="mb-3">
+                    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed  text-white fw-bold" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false"  style="font-size: x-large;">
+                      Pyroll
+                    </button>
+                    <div class="collapse" id="orders-collapse">
+                      <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Employee Salary</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="mb-3">
+                    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed  text-white fw-bold" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false"  style="font-size: x-large;">
+                      Account
+                    </button>
+                    <div class="collapse" id="account-collapse">
+                      <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="new-account.html" class="link-dark d-inline-flex text-decoration-none rounded">New...</a></li>
+                        <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Profile</a></li>
+                        <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Settings</a></li>
+                        <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Sign out</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="row text-center">
+              <div class="fs-1">
+                Done
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+            
 
   
 
