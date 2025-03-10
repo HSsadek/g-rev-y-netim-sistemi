@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="image/Done4.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/pofile.css">
+    <link rel="stylesheet" href="css/sidebars.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Done</title>
+  </head>
+  <body style="background-color: #f8f9fa;">
+    <div class="container">
+      <header class="d-flex justify-content-center py-1 fs-5 fw-bold" style="border-bottom: 2px solid #ff5757; overflow-y: hidden;">
+        <ul class="nav nav-pills">
+          <li class="nav-item m-3 one"><a href="" style="text-decoration: none; color: #ff5757;">Profil ve görünlülük</a></li>
+          <li class="nav-item m-3 tow"><a href="" style="text-decoration: none; color: black">Etkinlik</a></li>
+          <li class="nav-item m-3 three"><a href="" style="text-decoration: none; color: black">kartlar</a></li>
+        </ul>
+      </header>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-6 d-flex justify-content-center align-items-center" style="height: 88vh;">
+            <div class="position-relative" style="display: inline-block;">
+              <!-- Gizli Dosya Seçme Inputu -->
+              <input type="file" id="fileInput" accept="image/*" style="display: none;" onchange="previewImage(event)">
+      
+              <!-- Profil Fotoğrafı -->
+              <img id="profileImage" src="image/projeProfile.png" alt="profile-foto" 
+                class="rounded-circle mw-100 img-fluid" 
+                style="width: 250px; height: 250px; cursor: pointer;"
+                onclick="document.getElementById('fileInput').click();">
+      
+              <!-- Kalem İkonu -->
+              <i class="fa-solid fa-pencil fs-3 position-absolute" 
+                style="top: 15px; right: 15px; color:black; cursor: pointer;"
+                onclick="document.getElementById('fileInput').click();"></i>
+            </div>
+          </div>
+
+
+          <div class="col-lg-6 d-flex align-items-center justify-content-center border-0 mt-5">
+            <div class=" p-3 p-md-5 card border-0 text-light rounded-2xl " style="max-width: 32rem; background-color:#ff5757 ;">
+              <!-- form -->
+              <form action="" class="row g-1 p-3 p-md-4">
+                  <div class="col-12 text-center mb-1">
+                    <h1>kişisel bilgilerinizi yönetin</h1>
+                  </div>
+    
+                <div class="col-12">
+                  <div class="mb-2">
+                    <label class="form-label" for="">Kullanıcı Adı</label>
+                    <input type="text" class="form-control form-control-lg" placeholder="user-name">
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label class="form-label" for="">Biyografi</label>
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="Lave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Comments</label>
+                  </div>
+  
+                  <div class="col-12 text-center mt-4">
+                    <a href="#" class="btn btn-lg btn-block btn-light lift text-uppercase" alt="SIGNUP">Kayd Et</a>
+                  </div>
+                </div>
+    
+                </form>
+        </div>
+      </div>
+      
+      <!-- Bootstrap ve JavaScript -->
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+      
+      <script>
+        // Fotoğrafı önizleme fonksiyonu
+        function previewImage(event) {
+          var reader = new FileReader();
+          reader.onload = function() {
+            var output = document.getElementById('profileImage');
+            output.src = reader.result; // Yeni seçilen fotoğrafı göster
+          }
+          reader.readAsDataURL(event.target.files[0]); // Dosyayı oku
+        }
+      </script>
+      
+  </body>
+</html>
