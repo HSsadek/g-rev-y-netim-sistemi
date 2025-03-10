@@ -5,3 +5,30 @@
 body {
   background-color: #f8f9fa !important;
 }
+
+
+    /* Scrollbar'ı tamamen gizle */
+    .scroll {
+      height: 400px;
+      overflow-y: scroll;  /* Kaydırma işlevini korumak için */
+    }
+
+    .scroll::-webkit-scrollbar {
+      display: none;  /* WebKit tabanlı tarayıcılar (Chrome, Safari) */
+    }
+
+    /* Daha belirgin örnek */
+    .scroll-hidden {
+      position: relative;
+      height: 400px;
+      overflow: hidden;  /* Taşan içeriği gizlemek için */
+    }
+
+    .scroll-hidden .inner-scroll {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      overflow-y: scroll;  /* Kaydırma işlevini korumak için */
+      padding-right: 20px;  /* Scrollbar'ı gizli tutmak için ek boşluk */
+      box-sizing: content-box;
+    }
